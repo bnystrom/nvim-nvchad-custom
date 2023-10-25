@@ -7,11 +7,11 @@ M.dap = {
       "<cmd> DapToggleBreakpoint <CR>",
       "Add breakpoint at line"
     },
-
     ["<leader>dr"] = {
       "<cmd> DapContinue <CR>",
-      "Run or Continue the debugger"
+      "Run or continue the debugger"
     }
   },
 }
+
 return M

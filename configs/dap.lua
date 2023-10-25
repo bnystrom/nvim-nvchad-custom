@@ -11,11 +11,13 @@ dap.adapters["pwa-node"] = {
 
 for _, language in ipairs { "typescript", "javascript" } do
   dap.configurations[language] = {
-    type = "pwa-node",
-    request = "launch",
-    name = "Launch file",
-    program = "${file}",
-    cwd = "${workspaceFolder}",
-    runtimeExecutable = "node",
+    {
+      type = "pwa-node",
+      request = "launch",
+      name = "Launch file",
+      program = "${file}",
+      cwd = "${workspaceFolder}",
+      runtimeExecutable = "node",
+    },
   }
 end
